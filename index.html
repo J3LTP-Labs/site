@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentalPro - Sistema de Gestão Odontológica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-tooth"></i>
+                    <span>DentalPro</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#features">Recursos</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transforme sua clínica odontológica com o <span class="highlight">DentalPro</span></h1>
+                <p>O sistema de gestão mais completo e intuitivo para clínicas odontológicas. Gerencie pacientes, agendamentos, prontuários e muito mais em uma única plataforma.</p>
+                <div class="hero-buttons">
+                    <a href="#plans" class="btn btn-primary">Começar Agora</a>
+                    <a href="#features" class="btn btn-secondary">Ver Recursos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-laptop-medical"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que escolher o DentalPro?</h2>
+                <p>Recursos desenvolvidos especialmente para clínicas odontológicas</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Agendamento Inteligente</h3>
+                    <p>Sistema de agendamento automático com confirmação por SMS e WhatsApp</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Prontuário Digital</h3>
+                    <p>Prontuários eletrônicos completos com odontograma interativo</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Relatórios Avançados</h3>
+                    <p>Dashboards e relatórios financeiros em tempo real</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança LGPD</h3>
+                    <p>Totalmente adequado à Lei Geral de Proteção de Dados</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>App Mobile</h3>
+                    <p>Acesse o sistema de qualquer lugar com nosso aplicativo mobile</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte 24/7</h3>
+                    <p>Suporte técnico especializado sempre disponível</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <div class="section-header">
+                <h2>Escolha o plano ideal para sua clínica</h2>
+                <p>Planos flexíveis que crescem com o seu negócio</p>
+            </div>
+            <div class="billing-toggle">
+                <span class="billing-option" data-billing="monthly">Mensal</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="billing-toggle" checked>
+                    <label for="billing-toggle"></label>
+                </div>
+                <span class="billing-option" data-billing="yearly">Anual <span class="discount">-20%</span></span>
+            </div>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Básico</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount monthly-price" data-monthly="197" data-yearly="158">197</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Até 500 pacientes</li>
+                        <li><i class="fas fa-check"></i> 1 dentista</li>
+                        <li><i class="fas fa-check"></i> Agendamento online</li>
+                        <li><i class="fas fa-check"></i> Prontuário digital</li>
+                        <li><i class="fas fa-check"></i> Relatórios básicos</li>
+                    </ul>
+                    <button class="btn btn-outline plan-select" data-plan="basic">Selecionar Plano</button>
+                </div>
+                <div class="plan-card featured">
+                    <div class="plan-badge">Mais Popular</div>
+                    <div class="plan-header">
+                        <h3>Profissional</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount monthly-price" data-monthly="397" data-yearly="318">397</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Até 2.000 pacientes</li>
+                        <li><i class="fas fa-check"></i> Até 5 dentistas</li>
+                        <li><i class="fas fa-check"></i> Agendamento + SMS</li>
+                        <li><i class="fas fa-check"></i> Prontuário completo</li>
+                        <li><i class="fas fa-check"></i> Relatórios avançados</li>
+                        <li><i class="fas fa-check"></i> App mobile</li>
+                    </ul>
+                    <button class="btn btn-primary plan-select" data-plan="professional">Selecionar Plano</button>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Enterprise</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount monthly-price" data-monthly="797" data-yearly="638">797</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Pacientes ilimitados</li>
+                        <li><i class="fas fa-check"></i> Dentistas ilimitados</li>
+                        <li><i class="fas fa-check"></i> Múltiplas unidades</li>
+                        <li><i class="fas fa-check"></i> API personalizada</li>
+                        <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                        <li><i class="fas fa-check"></i> Treinamento incluso</li>
+                    </ul>
+                    <button class="btn btn-outline plan-select" data-plan="enterprise">Selecionar Plano</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="registration" style="display: none;">
+        <div class="container">
+            <div class="registration-container">
+                <div class="registration-header">
+                    <h2>Cadastre sua clínica</h2>
+                    <p>Preencha os dados da sua clínica para começar</p>
+                </div>
+                <form id="clinic-form" class="clinic-form">
+                    <div class="form-step active" data-step="1">
+                        <h3>Dados da Clínica</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="tradeName">Nome Fantasia *</label>
+                                <input type="text" id="tradeName" name="tradeName" required maxlength="150" placeholder="Ex: Clínica Sorriso Perfeito">
+                            </div>
+                            <div class="form-group">
+                                <label for="legalName">Razão Social *</label>
+                                <input type="text" id="legalName" name="legalName" required maxlength="150" placeholder="Ex: Sorriso Perfeito Serviços Odontológicos LTDA">
+                            </div>
+                            <div class="form-group">
+                                <label for="cnpj">CNPJ *</label>
+                                <input type="text" id="cnpj" name="cnpj" required maxlength="18" placeholder="00.000.000/0001-00">
+                            </div>
+                            <div class="form-group">
+                                <label for="stateRegistration">Inscrição Estadual</label>
+                                <input type="text" id="stateRegistration" name="stateRegistration" maxlength="30" placeholder="Ex: 1122334455">
+                            </div>
+                            <div class="form-group">
+                                <label for="municipalRegistration">Inscrição Municipal</label>
+                                <input type="text" id="municipalRegistration" name="municipalRegistration" maxlength="30" placeholder="Ex: 998877665">
+                            </div>
+                            <div class="form-group">
+                                <label for="operationLicense">Alvará de Funcionamento</label>
+                                <input type="text" id="operationLicense" name="operationLicense" maxlength="50" placeholder="Ex: ALV-2025-019">
+                            </div>
+                            <div class="form-group">
+                                <label for="cnes">CNES</label>
+                                <input type="text" id="cnes" name="cnes" maxlength="20" placeholder="Ex: 7654321">
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary" onclick="nextStep()">Continuar</button>
+                        </div>
+                    </div>
+
+                    <div class="form-step" data-step="2">
+                        <h3>Selecione seu Plano</h3>
+                        <div id="selected-plan-display" class="selected-plan">
+                            <!-- Plan details will be populated here -->
+                        </div>
+                        <div class="billing-summary">
+                            <div class="billing-option-selector">
+                                <label>
+                                    <input type="radio" name="billing" value="monthly" checked>
+                                    <span>Pagamento Mensal</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="billing" value="yearly">
+                                    <span>Pagamento Anual <small>(20% desconto)</small></span>
+                                </label>
+                            </div>
+                            <div class="total-amount">
+                                <span>Total: R$ <span id="total-amount">0</span></span>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" onclick="prevStep()">Voltar</button>
+                            <button type="button" class="btn btn-primary" onclick="nextStep()">Continuar para Pagamento</button>
+                        </div>
+                    </div>
+
+                    <div class="form-step" data-step="3">
+                        <h3>Dados do Cartão de Crédito</h3>
+                        <div class="payment-form">
+                            <div class="form-group">
+                                <label for="cardNumber">Número do Cartão *</label>
+                                <input type="text" id="cardNumber" name="cardNumber" required placeholder="0000 0000 0000 0000">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiryDate">Validade *</label>
+                                    <input type="text" id="expiryDate" name="expiryDate" required placeholder="MM/AA">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV *</label>
+                                    <input type="text" id="cvv" name="cvv" required placeholder="000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardHolder">Nome no Cartão *</label>
+                                <input type="text" id="cardHolder" name="cardHolder" required placeholder="Nome como está no cartão">
+                            </div>
+                        </div>
+                        <div class="payment-summary">
+                            <div class="summary-item">
+                                <span>Plano selecionado:</span>
+                                <span id="summary-plan">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Cobrança:</span>
+                                <span id="summary-billing">-</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span>Total:</span>
+                                <span id="summary-total">R$ 0</span>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" onclick="prevStep()">Voltar</button>
+                            <button type="submit" class="btn btn-primary">Finalizar Cadastro</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em contato</h2>
+                <p>Nossa equipe está pronta para ajudar você</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 9999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@dentalpro.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>São Paulo, SP</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-tooth"></i>
+                    <span>DentalPro</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Política de Privacidade</a>
+                    <a href="#terms">Termos de Uso</a>
+                    <a href="#support">Suporte</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DentalPro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Cadastro realizado com sucesso!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Sua clínica foi cadastrada e o pagamento foi processado. Em breve você receberá um email com os dados de acesso ao sistema.</p>
+                <div class="success-details">
+                    <p><strong>Clínica:</strong> <span id="success-clinic"></span></p>
+                    <p><strong>Plano:</strong> <span id="success-plan"></span></p>
+                    <p><strong>Valor:</strong> <span id="success-amount"></span></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
